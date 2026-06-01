@@ -1,0 +1,51 @@
+Network Log Analysis Report
+Generated at: Thu May 21 07:44:51 PM EDT 2026
+--------------------------------------
+Log Files Analyzed:
+/var/log/syslog
+/var/log/kern.log
+/var/log/auth.log
+--------------------------------------
+Last 10 Network Events:
+/var/log/auth.log:2026-05-20T21:30:00.609587-04:00 mohsenpour sudo:   mehrad : TTY=pts/0 ; PWD=/home/mehrad/Desktop/mohsenpour_network_02/cenario_2_FTP ; USER=root ; COMMAND=/usr/bin/chmod a-w /home/ftpuser/ftp
+/var/log/auth.log:2026-05-20T21:30:00.624112-04:00 mohsenpour sudo:   mehrad : TTY=pts/0 ; PWD=/home/mehrad/Desktop/mohsenpour_network_02/cenario_2_FTP ; USER=root ; COMMAND=/usr/bin/systemctl restart vsftpd
+/var/log/auth.log:2026-05-20T21:30:00.666382-04:00 mohsenpour sudo:   mehrad : TTY=pts/0 ; PWD=/home/mehrad/Desktop/mohsenpour_network_02/cenario_2_FTP ; USER=root ; COMMAND=/usr/bin/systemctl enable vsftpd
+/var/log/auth.log:2026-05-21T19:15:45.533854-04:00 mohsenpour sudo:   mehrad : TTY=pts/0 ; PWD=/home/mehrad/Desktop/mohsenpour_network_02/scenario_5_SSH ; USER=root ; COMMAND=/usr/bin/apt install openssh-server
+/var/log/auth.log:2026-05-21T19:16:07.179464-04:00 mohsenpour useradd[7334]: new user: name=sshd, UID=125, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+/var/log/auth.log:2026-05-21T19:16:15.776332-04:00 mohsenpour sudo:   mehrad : TTY=pts/0 ; PWD=/home/mehrad/Desktop/mohsenpour_network_02/scenario_5_SSH ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+/var/log/auth.log:2026-05-21T19:17:11.441845-04:00 mohsenpour sshd[7771]: Server listening on 0.0.0.0 port 22.
+/var/log/auth.log:2026-05-21T19:17:11.441961-04:00 mohsenpour sshd[7771]: Server listening on :: port 22.
+/var/log/auth.log:2026-05-21T19:17:26.752266-04:00 mohsenpour sshd[7773]: Accepted password for mehrad from 127.0.0.1 port 32990 ssh2
+/var/log/auth.log:2026-05-21T19:17:26.753434-04:00 mohsenpour sshd[7773]: pam_unix(sshd:session): session opened for user mehrad(uid=1000) by mehrad(uid=0)
+--------------------------------------
+IP Address Statistics:
+    117 1.1.1.1
+     95 192.168.0.180
+     91 0.0.0.0
+     90 224.0.0.1
+     80 1.21.1.11
+     21 185.125.190.58
+     21 185.125.190.57
+     20 91.189.91.157
+     20 185.125.190.56
+     16 1.6.99.901
+     12 00.00.02.41
+     11 185.125.188.54
+     10 185.125.188.58
+     10 172.20.11.12
+     10 172.20.11.11
+      9 185.125.188.59
+      9 127.0.0.1
+      8 94.04.77.00
+      8 185.125.188.57
+      8 172.17.0.1
+      5 171.0.0.192
+      5 170.0.0.192
+      5 127.0.0.53
+      4 239.255.255.250
+      1 192.168.1.0
+      1 172.64.66.2
+      1 104.20.28.246
+--------------------------------------
+Suspicious Patterns (Multiple Failed Logins):
+--------------------------------------

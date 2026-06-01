@@ -1,0 +1,23 @@
+1. TCP Connections:
+Based on the TCP Conversations statistics, 6 TCP connection attempts were identified.
+
+2. DNS Queries:
+A total of 4 DNS queries were captured using the filter (dns.flags.response == 0). 
+The domains queried were:
+- google.com (Types A and AAAA)
+- gapgpt.app (Types A and AAAA)
+
+3. Packet Loss & Retransmissions:
+Yes, significant packet loss was observed. The capture shows multiple "[TCP Retransmission]" 
+packets for every connection attempt. The client (192.168.0.180) is sending SYN packets 
+to port 80, but no SYN-ACK responses are received from the destinations.
+
+4. Average RTT:
+The average RTT could not be determined because the TCP handshakes were never completed. 
+The server-to-client traffic (Packets B -> A) is 0 in almost all streams, indicating 
+a total lack of response from the remote hosts.
+
+Conclusion:
+The network issue is confirmed. While DNS resolution is working (DNS queries are sent), 
+HTTP traffic on port 80 is failing due to a lack of response from the servers, leading 
+to continuous TCP retransmissions.

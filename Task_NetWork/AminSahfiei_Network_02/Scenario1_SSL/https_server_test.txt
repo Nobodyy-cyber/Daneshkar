@@ -1,0 +1,21 @@
+# HTTPS Server Test Report
+
+## 1. Execution
+- Server Script: https_server.py
+- Command: python3 https_server.py
+- Status: Running on https://localhost:8443
+
+## 2. Curl Test Result
+- Command: curl -v -k https://localhost:8443
+- Expected Result: 
+  * Trying 127.0.0.1:8443...
+  * Connected to localhost port 8443
+  * SSL connection using TLSv1.3
+  * ...
+  < HTTP/1.0 200 OK
+  < Server: BaseHTTP/0.6 Python/3.10.x
+  < Date: ...
+  < Content-type: ...
+
+## 3. Conclusion
+The Python HTTPS server successfully served a response over port 8443 using the self-signed certificate (myapp.crt). The connection was established securely via TLS.

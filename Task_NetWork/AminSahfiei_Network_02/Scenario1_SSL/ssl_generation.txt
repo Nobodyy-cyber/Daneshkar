@@ -1,0 +1,29 @@
+# SSL/TLS Generation Report - Scenario 1
+
+## 1. Command to generate Certificate and Private Key
+Command executed:
+openssl req -x509 -newkey rsa:2048 -nodes -keyout myapp.key -out myapp.crt -days 365 -subj "/C=IR/ST=Tehran/L=Tehran/O=MyCompany/CN=myapp.local"
+
+- Tool used: OpenSSL
+- Algorithm: RSA with 2048-bit key length
+- Validity period: 365 days
+- Subject details: Country (IR), State (Tehran), Locality (Tehran), Organization (MyCompany), Common Name (myapp.local)
+
+## 2. Certificate Inspection
+Command: 
+openssl x509 -in myapp.crt -text -noout
+
+Key observed outputs:
+- Version: 3
+- Signature Algorithm: sha256WithRSAEncryption
+- Issuer/Subject: C=IR, ST=Tehran, L=Tehran, O=MyCompany, CN=myapp.local
+- Validity: From May 20, 2026, to May 20, 2027
+- Public Key: 2048 bit
+
+## 3. Private Key Verification
+Command: 
+openssl rsa -in myapp.key -check
+
+Output: 
+RSA key ok
+(This output confirms that the private key file is valid and its mathematical structure conforms to the RSA standard.)

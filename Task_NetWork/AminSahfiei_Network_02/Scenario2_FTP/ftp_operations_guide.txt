@@ -1,0 +1,31 @@
+# FTP Operations Guide
+
+## 1. Interactive FTP Client
+To connect manually and use the FTP prompt:
+- Command: ftp ftp.ubuntu.com
+- User: anonymous
+- Password: (any email address or just press enter)
+- Commands:
+  - ls : List files in current directory
+  - cd [directory] : Change directory
+  - get [filename] : Download a file
+  - put [filename] : Upload a file (Requires write access)
+  - bye : Close connection
+
+## 2. Automated Tools
+For scripts or quick transfers without interactive shells:
+
+- Using Wget (Best for downloading):
+  wget ftp://ftp.ubuntu.com/path/to/file
+
+- Using Curl (Best for uploading/downloading with authentication):
+  - Download:
+    curl -O ftp://ftp.ubuntu.com/path/to/file
+  - Upload:
+    curl -u username:password -T local_file.txt ftp://your-server.com/remote_path/
+
+## 3. Important Note on 'put'
+In the public 'ftp.ubuntu.com', you only have read-only access. 
+If you get a "Permission denied" error during 'put', it is because 
+the server is correctly protecting its directory. 
+To test uploads, use your local vsftpd server configured in question 2.1.

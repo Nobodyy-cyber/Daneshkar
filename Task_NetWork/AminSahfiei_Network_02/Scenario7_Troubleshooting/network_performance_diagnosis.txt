@@ -1,0 +1,11 @@
+Network Performance Diagnosis Report
+Generated at: Thu May 21 09:51:26 PM EDT 2026
+-------------------------------------
+
+Latency Test:
+Testing latency to 8.8.8.8
+Testing latency to 1.1.1.1
+Testing latency to google.com
+-------------------------------------
+
+Packet Loss Test (8.8.8.8):

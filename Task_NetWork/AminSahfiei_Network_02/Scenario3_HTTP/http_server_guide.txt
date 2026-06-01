@@ -1,0 +1,19 @@
+# Python HTTP Server Setup Guide
+
+## 1. Prerequisites
+- Python 3 must be installed on the system.
+- An 'index.html' file should be present in the directory.
+
+## 2. Running the Server
+- Command: python3 http_server.py
+- The server will listen on port 8080.
+- Access the app via browser at: http://localhost:8080
+
+## 3. Testing the Server
+- Open your browser or use curl:
+  curl http://localhost:8080
+
+## 4. Notes
+- This server serves files from the directory where the script is executed.
+- Use Ctrl+C in the terminal to stop the service.
+- If port 8080 is busy, change the 'PORT' variable in the script.

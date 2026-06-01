@@ -1,0 +1,35 @@
+Simple Monitoring Dashboard - Output Explanation
+
+This script displays a terminal-based network monitoring dashboard
+that refreshes automatically every 10 seconds.
+
+Sections in the dashboard:
+
+1. Network Interfaces & IPs
+Shows all network interfaces on the system along with their assigned
+IP addresses. Example interfaces include eth0, wlan0, or lo.
+
+2. Active Connections
+Displays the number of currently active TCP and UDP connections
+on the system using the ss command.
+
+3. Open Ports
+Lists all listening ports on the system. These are ports where
+services are waiting for incoming connections (e.g., SSH on port 22).
+
+4. DNS Servers
+Displays configured DNS server IP addresses from /etc/resolv.conf
+used for domain name resolution.
+
+5. Latest 5 Log Entries
+Shows the most recent 5 entries from the system log file such as
+/var/log/syslog or /var/log/messages. This helps identify recent
+network or system events.
+
+Color Output:
+Different sections use different colors to make the dashboard
+easier to read in the terminal.
+
+Refresh Mechanism:
+The dashboard refreshes every 10 seconds using a while loop,
+clear command, and sleep 10.

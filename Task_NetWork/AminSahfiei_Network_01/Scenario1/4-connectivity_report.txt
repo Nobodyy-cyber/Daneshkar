@@ -1,0 +1,19 @@
+--- Connectivity Report (Thu May 21 07:06:37 AM CDT 2026) ---
+--------------------------------------------
+[1] Pinging 8.8.8.8...
+FAILURE: 8.8.8.8 is unreachable.
+
+[2] Pinging google.com...
+FAILURE: google.com is unreachable.
+
+[3] Testing DNS resolution for github.com...
+SUCCESS: DNS resolution successful.
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	github.com
+Address: 140.82.121.3
+
+--------------------------------------------
+Report completed.

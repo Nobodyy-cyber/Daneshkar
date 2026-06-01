@@ -1,0 +1,42 @@
+===== HTTPS Test Report =====
+Target: https://google.com
+
+[1] Basic SSL/TLS info using curl
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519 / id-ecPublicKey
+*  expire date: Jul 30 15:51:35 2026 GMT
+*  SSL certificate verify ok.
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+< expires: Fri, 19 Jun 2026 20:24:33 GMT
+expires: Fri, 19 Jun 2026 20:24:33 GMT
+
+[2] Certificate chain (using openssl)
+ 0 s:CN = *.google.com
+ 1 s:C = US, O = Google Trust Services, CN = WE2
+ 2 s:C = US, O = Google Trust Services LLC, CN = GTS Root R4
+
+[3] Certificate expiration date
+notBefore=May  7 15:51:36 2026 GMT
+notAfter=Jul 30 15:51:35 2026 GMT
+
+[4] TLS version used
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+* TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+* TLSv1.3 (IN), TLS handshake, Certificate (11):
+* TLSv1.3 (IN), TLS handshake, CERT verify (15):
+* TLSv1.3 (IN), TLS handshake, Finished (20):
+* TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+* TLSv1.3 (OUT), TLS handshake, Finished (20):
+* SSL connection using TLSv1.3 / TLS_AES_256_GCM_SHA384 / X25519 / id-ecPublicKey
+* TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+
+===== Test Completed =====

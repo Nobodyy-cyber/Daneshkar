@@ -1,0 +1,21 @@
+DNS Configuration Report
+
+1. /etc/hosts updated with:
+192.168.1.10 app.local
+192.168.1.11 db.local
+192.168.1.12 cache.local
+
+2. DNS server configured using systemd-resolved:
+Primary DNS: 1.1.1.1
+Fallback DNS: 8.8.8.8
+
+3. Tests
+
+Ping test:
+ping -c 4 app.local
+Result: hostname resolved to 192.168.1.10
+
+DNS lookup test:
+nslookup google.com
+Server: 127.0.0.53
+Result: successful resolution

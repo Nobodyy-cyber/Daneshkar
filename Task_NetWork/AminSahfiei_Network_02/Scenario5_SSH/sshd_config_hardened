@@ -1,0 +1,19 @@
+Port 2222
+
+PermitRootLogin no
+
+PasswordAuthentication no
+
+PubkeyAuthentication yes
+
+MaxAuthTries 3
+
+PermitEmptyPasswords no
+
+LoginGraceTime 30
+
+AllowUsers admin mehrad
+
+X11Forwarding no
+
+LogLevel VERBOSE

@@ -1,0 +1,46 @@
+Network Topology Description
+----------------------------
+
+The company's internal network uses a Star topology. 
+All devices are connected to a central switch, which connects to the main router.
+The router acts as the gateway to the internet.
+
+Network components:
+
+Router (Gateway): 192.168.1.1
+
+Servers:
+Web Server   : 192.168.1.10
+DB Server    : 192.168.1.11
+Cache Server : 192.168.1.12
+
+User Computers:
+10 client machines with IP range 192.168.1.100 – 192.168.1.110
+
+ASCII Network Topology
+----------------------
+
+                Internet
+                   |
+               [Router]
+            (192.168.1.1)
+                   |
+                [Switch]
+         _________|_________
+        |         |         |
+     [Web]      [DB]     [Cache]
+ 192.168.1.10 192.168.1.11 192.168.1.12
+        |
+   ---------------------------
+   |   |   |   |   |   |   |
+  PC1 PC2 PC3 PC4 PC5 PC6 PC7 PC8 PC9 PC10
+192.168.1.100 - 192.168.1.110
+
+
+What happens if the Switch fails?
+---------------------------------
+If the central switch fails, all connected devices lose network connectivity.
+User computers will not be able to access the servers or the internet.
+The servers will also be unable to communicate with each other.
+Since this is a star topology, the switch is a single point of failure
+---------------------------------

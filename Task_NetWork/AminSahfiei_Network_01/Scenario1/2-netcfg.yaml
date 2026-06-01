@@ -1,0 +1,13 @@
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens33:
+      addresses:
+        - 192.168.1.100/24
+      gateway: 192.168.1.1
+      nameservers:
+        addresses:
+          - 8.8.8.8
+          - 1.1.1.1
+

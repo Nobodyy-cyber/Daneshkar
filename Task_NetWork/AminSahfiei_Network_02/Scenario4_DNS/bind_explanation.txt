@@ -1,0 +1,61 @@
+Bind DNS Server Sample Configuration Explanation
+
+This example shows a basic BIND DNS configuration for the domain example.local.
+
+1. named.conf.local
+
+The named.conf.local file is used to define local DNS zones.  
+In this configuration, we define a master zone for the domain example.local.
+
+zone "example.local" {
+    type master;
+    file "/etc/bind/db.example.local";
+}
+
+This means the DNS server is authoritative for the example.local domain and will read its records from the zone file db.example.local.
+
+-----------------------------------------------------
+
+2. db.example.local (Zone File)
+
+The zone file contains DNS records for the domain.
+
+Important components:
+
+SOA (Start of Authority)
+This record defines the main DNS server and administrative contact.
+It also contains values for zone synchronization such as Serial, Refresh, Retry, and Expire.
+
+NS Record
+The NS record specifies the authoritative name server for the domain.
+
+Example:
+example.local -> ns1.example.local
+
+A Records
+A records map hostnames to IPv4 addresses.
+
+Examples:
+www.example.local  -> 192.168.1.10
+ftp.example.local  -> 192.168.1.30
+mail.example.local -> 192.168.1.20
+
+MX Record
+The MX record defines the mail server responsible for receiving emails for the domain.
+
+Example:
+example.local -> mail.example.local
+
+Priority value "10" indicates the preference of the mail server.
+
+-----------------------------------------------------
+
+Conclusion
+
+This configuration allows a BIND DNS server to resolve:
+
+www.example.local
+ftp.example.local
+mail.example.local
+
+It also defines a mail server and authoritative name server for the domain example.local.

@@ -1,0 +1,76 @@
+SSH Key-Based Authentication Guide
+
+This document explains how to generate an SSH key pair and configure passwordless SSH authentication.
+
+--------------------------------------------------
+
+1. Generate SSH Key Pair (RSA 2048-bit)
+
+To generate an SSH key pair, use the ssh-keygen command:
+
+ssh-keygen -t rsa -b 2048 -f ~/.ssh/mykey -N ""
+
+Explanation:
+
+-t rsa        → specifies RSA algorithm
+-b 2048       → key size (2048-bit)
+-f ~/.ssh/mykey → output file name
+-N ""         → empty passphrase
+
+After running the command, two files will be created:
+
+~/.ssh/mykey       → private key
+~/.ssh/mykey.pub   → public key
+
+--------------------------------------------------
+
+2. Public Key Format
+
+The public key file contains a line similar to this:
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ... user@host
+
+Structure of the public key:
+
+ssh-rsa        → key type
+AAAAB3...      → encoded key data
+user@host      → optional comment
+
+This public key must be placed on the remote server.
+
+--------------------------------------------------
+
+3. Passwordless Authentication
+
+Passwordless authentication works by storing the public key on the remote server.
+
+Steps:
+
+1. Copy the public key to the server:
+
+ssh-copy-id -i ~/.ssh/mykey.pub user@server
+
+Example:
+
+ssh-copy-id -i ~/.ssh/mykey.pub admin@192.168.1.10
+
+2. The key will be added to:
+
+~/.ssh/authorized_keys
+
+3. When connecting, the server verifies the private key stored on the client.
+
+Connection example:
+
+ssh -i ~/.ssh/mykey admin@192.168.1.10
+
+After configuration, the login will occur without asking for a password.
+
+--------------------------------------------------
+
+4. Benefits of SSH Key Authentication
+
+- More secure than passwords
+- Resistant to brute force attacks
+- Convenient for automation and scripts
+- Widely used for server management and DevOps workflows

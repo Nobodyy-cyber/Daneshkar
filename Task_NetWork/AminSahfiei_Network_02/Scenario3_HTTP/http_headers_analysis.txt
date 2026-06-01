@@ -1,0 +1,126 @@
+HTTP Headers Analysis
+=====================
+
+Websites tested:
+- https://github.com
+- https://google.com
+- https://stackoverflow.com
+
+This report explains the purpose of the following HTTP response headers:
+1. Content-Type
+2. Server
+3. Cache-Control
+4. X-Frame-Options
+5. Content-Security-Policy
+
+--------------------------------------------------
+1) Content-Type
+--------------------------------------------------
+Purpose:
+The Content-Type header tells the client what kind of data is being returned by the server and how it should be interpreted.
+
+Examples:
+- text/html -> the response is an HTML page
+- application/json -> the response contains JSON data
+- image/png -> the response contains a PNG image
+
+Why it matters:
+This header is important for correct rendering and processing of content. For example, browsers use it to decide whether to display a page as HTML or treat it as a file download.
+
+Observed on tested websites:
+- github.com: usually returns text/html; charset=utf-8
+- google.com: usually returns text/html; charset=UTF-8
+- stackoverflow.com: usually returns text/html; charset=utf-8
+
+--------------------------------------------------
+2) Server
+--------------------------------------------------
+Purpose:
+The Server header identifies the software used by the web server or the platform that is handling the response.
+
+Examples:
+- nginx
+- Apache
+- Google frontend
+- GitHub.com
+
+Why it matters:
+This header can help in debugging and server identification, but it can also reveal infrastructure details. For security reasons, some websites hide or minimize this header.
+
+Observed on tested websites:
+- github.com: may show a GitHub or proxy-related server value
+- google.com: often hides detailed server information or shows a Google-related frontend value
+- stackoverflow.com: may show a CDN or web server value depending on the response path
+
+--------------------------------------------------
+3) Cache-Control
+--------------------------------------------------
+Purpose:
+The Cache-Control header defines caching rules for browsers, proxies, and other intermediaries.
+
+Examples:
+- no-cache -> must revalidate before reuse
+- no-store -> must not store the response
+- max-age=3600 -> response can be cached for 1 hour
+- public / private -> controls who can cache the response
+
+Why it matters:
+This header improves performance and reduces server load by allowing safe caching, or prevents caching when data is sensitive or dynamic.
+
+Observed on tested websites:
+- github.com: often uses cache-control to control browser and CDN caching
+- google.com: often uses strict caching policies for dynamic pages
+- stackoverflow.com: may use caching for static content and dynamic controls for pages
+
+--------------------------------------------------
+4) X-Frame-Options
+--------------------------------------------------
+Purpose:
+The X-Frame-Options header protects against clickjacking by controlling whether a page can be displayed inside a frame, iframe, or object.
+
+Common values:
+- DENY -> page cannot be framed anywhere
+- SAMEORIGIN -> only the same website can frame it
+- ALLOW-FROM uri -> allow framing from a specific origin (less commonly supported)
+
+Why it matters:
+This is a security header that helps prevent malicious sites from embedding your page and tricking users into clicking hidden elements.
+
+Observed on tested websites:
+- github.com: commonly uses SAMEORIGIN or a restrictive policy
+- google.com: usually uses a restrictive framing policy
+- stackoverflow.com: commonly uses SAMEORIGIN or a similar protection
+
+--------------------------------------------------
+5) Content-Security-Policy (CSP)
+--------------------------------------------------
+Purpose:
+Content-Security-Policy is a strong security header that tells the browser which sources are allowed for scripts, styles, images, fonts, frames, and other resources.
+
+Examples:
+- default-src 'self'
+- script-src 'self' https://trusted.cdn.com
+- frame-ancestors 'none'
+- object-src 'none'
+
+Why it matters:
+CSP reduces risks such as cross-site scripting (XSS), data injection, and loading malicious resources. It is one of the most important modern browser security headers.
+
+Observed on tested websites:
+- github.com: usually has a strong CSP with multiple allowed trusted domains
+- google.com: usually has a strict and complex CSP policy
+- stackoverflow.com: usually applies CSP to limit external scripts and frames
+
+--------------------------------------------------
+Conclusion
+--------------------------------------------------
+Among the tested websites, all major security and performance headers were used to improve safety, loading behavior, and browser control.
+
+Summary of header roles:
+- Content-Type: describes the format of the response
+- Server: reveals the server or platform handling the request
+- Cache-Control: controls caching behavior
+- X-Frame-Options: protects against clickjacking
+- Content-Security-Policy: restricts where resources can be loaded from and improves security
+
+These headers are important because they help browsers process content correctly, improve performance, and protect users from web attacks.

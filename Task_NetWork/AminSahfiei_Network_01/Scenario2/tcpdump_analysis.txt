@@ -1,0 +1,22 @@
+Analysis Report
+----------------
+HTTP Capture: Captured all packets on port 80 for 30 seconds,
+The capture shows TCP communication between the 
+local host (192.168.191.130) and external web servers.
+The packets include TCP SYN, SYN-ACK, and ACK handshakes indicating the 
+establishment of TCP connections.
+Some HTTP request traffic was observed between client and server.
+But 5 packet 
+SYN/ACK and Other Unreachable
+================================================================  
+DNS Capture: Captured all DNS queries and responses on port 53 for 30 seconds
+The DNS queries show the system requesting 
+IP address resolution for domain names.
+The DNS server responded with corresponding IP addresses.
+The captured traffic shows normal network behavior
+including DNS queries and HTTP connection attempts.
+TCP handshakes and DNS responses indicate 
+that basic network connectivity and name resolution are operational.
+Source Ips [127.0.0.1_192.168.191.130_192.168.191.2]
+To Dest IPs [127.0.0.53_192.168.191.130_192.168.191.2]
+I See in 30second 15 Packet Reach And Other Drop

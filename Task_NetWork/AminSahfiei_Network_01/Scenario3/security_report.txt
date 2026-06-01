@@ -1,0 +1,14 @@
+===== Security Monitoring Report =====
+Generated at: Mon May 17 14:45:54 PM EDT 2026
+--------------------------------------
+
+[1] IPs with more than 100 active connections:
+
+[2] SSH failed login attempts (Failed password):
+      4 COMMAND=/usr/bin/grep
+(Total failed attempts: 5)
+
+[3] Connections to unusual ports (greater than 10000):
+
+--------------------------------------
+Full report saved to security_report.txt

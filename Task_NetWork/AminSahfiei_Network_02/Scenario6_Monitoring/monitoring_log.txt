@@ -1,0 +1,101 @@
+Starting network monitoring...
+----------------------------------------
+Time: 2026-05-21 19:43:07
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 7
+Top 5 IP Addresses:
+      3 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1
+----------------------------------------
+Time: 2026-05-21 19:43:12
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 7
+Top 5 IP Addresses:
+      3 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1
+----------------------------------------
+Time: 2026-05-21 19:43:17
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 9
+Top 5 IP Addresses:
+      5 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1
+----------------------------------------
+Time: 2026-05-21 19:43:22
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 9
+Top 5 IP Addresses:
+      5 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1
+----------------------------------------
+Time: 2026-05-21 19:43:28
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 8
+Top 5 IP Addresses:
+      4 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1
+----------------------------------------
+Time: 2026-05-21 19:43:33
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 7
+Top 5 IP Addresses:
+      3 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1
+----------------------------------------
+Time: 2026-05-21 19:43:38
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 8
+Top 5 IP Addresses:
+      4 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1
+----------------------------------------
+Time: 2026-05-21 19:43:43
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 8
+Top 5 IP Addresses:
+      4 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1
+----------------------------------------
+Time: 2026-05-21 19:43:48
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 7
+Top 5 IP Addresses:
+      3 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1
+----------------------------------------
+Time: 2026-05-21 19:43:53
+Interface: enp5s0
+Download (5s): 0 KB
+Upload (5s): 0 KB
+Active Connections: 7
+Top 5 IP Addresses:
+      3 192.168.0.180
+      2 127.0.0.1
+      1 192.168.0.180%wlo1

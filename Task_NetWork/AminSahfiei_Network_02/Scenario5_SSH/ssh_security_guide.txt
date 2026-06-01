@@ -1,0 +1,79 @@
+SSH Security Hardening Guide
+
+This document explains important SSH security settings and why they are used to harden an SSH server.
+
+--------------------------------------------------
+
+1. Important SSH Security Settings
+
+Several configuration options can improve SSH security:
+
+Port 2222
+Changing the default SSH port (22) reduces automated attacks and port scanning attempts.
+
+PermitRootLogin no
+Disabling root login prevents attackers from directly accessing the root account.
+
+PasswordAuthentication no
+Disabling password authentication forces users to use SSH keys instead of passwords.
+
+PubkeyAuthentication yes
+This enables secure key-based authentication.
+
+MaxAuthTries 3
+Limits the number of failed login attempts before disconnecting the client.
+
+LoginGraceTime 30
+Limits the time allowed for authentication.
+
+AllowUsers
+Restricts SSH access to specific users only.
+
+--------------------------------------------------
+
+2. Why Disable Password Authentication?
+
+Password authentication is vulnerable to brute-force attacks.
+
+Attackers often attempt thousands of password combinations automatically.
+
+Using SSH keys is much more secure because:
+
+- Keys are extremely difficult to brute-force
+- Authentication happens using cryptographic verification
+- Password guessing attacks become ineffective
+
+--------------------------------------------------
+
+3. Why Disable Root Login?
+
+The root account has full administrative privileges.
+
+Allowing direct root login increases the risk of system compromise.
+
+Instead, administrators should:
+
+1. Log in as a normal user
+2. Use sudo to gain administrative privileges
+
+This adds an extra security layer and improves auditability.
+
+--------------------------------------------------
+
+4. Monitoring Failed Login Attempts
+
+Failed login attempts can be monitored through system log files.
+
+Example command:
+
+grep "Failed password" /var/log/auth.log
+
+This command shows failed SSH login attempts and helps administrators detect brute-force attacks.
+
+Other useful commands:
+
+lastb
+
+Shows failed login attempts recorded by the system.
+
+Monitoring these logs regularly helps identify suspicious activity and improve server security.

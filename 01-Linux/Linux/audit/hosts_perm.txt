@@ -1,0 +1,2 @@
+# Permissions details for hosts.bak
+-rw------- 1 devops-homework devops-homework 221 May 31 05:30 hosts.bak

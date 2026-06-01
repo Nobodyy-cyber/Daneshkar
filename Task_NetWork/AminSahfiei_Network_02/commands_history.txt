@@ -1,0 +1,733 @@
+    1  sudo atp update
+    2  sudo atp install
+    3  [200~     
+    4  sudo apt update
+    5  sudo apt install synaptic
+    6  whoami
+    7  pwd
+    8  arch
+    9  cd
+   10  cd Dessjtop
+   11  cd Desktop
+   12  cd
+   13  cd -
+   14  cd Desktop
+   15  cd -
+   16  uname
+   17  cls
+   18  cl
+   19  ls
+   20  cd 
+   21  ls
+   22  hostname
+   23  lsb_release -a
+   24  man
+   25  pwd
+   26  man pwd
+   27  clear
+   28  sudo atp install gnome-tweakss
+   29  sudo atp install gnome-tweaks
+   30  sudo apt install gnome-tweaks
+   31  clear
+   32  sudo apt install gnome-tweaks
+   33  clear
+   34  sudo apt install vlc
+   35  sudo apt install mpv
+   36  sudo apt install gnome-tweaks
+   37  sudo apt install vlc
+   38  sudo apt install FDM
+   39  sudo apt install vscode
+   40  sudo apt install XDM
+   41  snap list
+   42  sudo apt install vscode
+   43  sudo apt install temux
+   44  sudo apt install guake
+   45  nano system_audit_exam.sh
+   46  pwd
+   47  ls
+   48  mono ls
+   49  man ls
+   50  ls -a
+   51  chmod -x system_audit_exam.sh
+   52  ls -a
+   53  chmod +x system_audit_exam.sh
+   54  clear
+   55  [200~   ./system_audit_exam.sh
+   56  ./system_audit_exam.sh
+   57  clear
+   58  ./system_audit_exam.sh
+   59  chmod +x system_audit_exam.sh
+   60  ./system_audit_exam.sh
+   61  clear
+   62  ./system_audit_exam.sh
+   63  awk /etc/passwd
+   64  awk -F /etc/passwd
+   65  clear
+   66  clear
+   67  cut -d: -f1 /etc/passwd
+   68  clear
+   69  cut /etc/passwd
+   70  cat /etc/passwd
+   71  clear
+   72  ./system_audit_exam.sh
+   73  man awk
+   74  clear
+   75  ./system_audit_exam.sh
+   76  cat /etc/passwd
+   77  clear
+   78  nano system_example.sh
+   79  nano system_audit.sh
+   80  ls
+   81  pwwd
+   82  pwd
+   83  cd ..
+   84  pwd
+   85  ls
+   86  cd mehrad
+   87  ls
+   88  clear
+   89  ls
+   90  chmod +x system_audit.sh
+   91  ls
+   92  cd desktop
+   93  cd Desktop
+   94  ls
+   95  cd
+   96  cat ~etc/passwd
+   97  cat etc/passwd
+   98  cat /etc/passwd
+   99  clear
+  100  man cat
+  101  clear
+  102  man cut
+  103  cut -f /etc/passwd
+  104  man cut
+  105  cut -d: /etc/passwd
+  106  cut -d /etc/passwd
+  107  cut -d: -f1 /etc/passwd
+  108  clear
+  109  uname
+  110  man uname
+  111  uname -sv
+  112  uname -sr
+  113  man uname
+  114  uname -srv
+  115  arch
+  116  cat
+  117  cat /etc/group
+  118  head /etc/group
+  119  head -n3 /etc/group
+  120  head -n3 /etc/group | tail -n2 /etc/group
+  121  clear
+  122  cat /etc/group
+  123  head -n3 /etc/group || tail -n2 /etc/group
+  124  head -n3 | tail -n2 /etc/group
+  125  head -n3 /etc/group
+  126  clear
+  127  ./system_audit_exam.sh
+  128  cd Desktop
+  129  ./system_audit_exam.sh
+  130  cd
+  131  pwd
+  132  cd
+  133  pwd
+  134  cd
+  135  pwd
+  136  ..cd
+  137  .cd
+  138  ..cd
+  139  clear
+  140  pwd
+  141  ls
+  142  زی /
+  143  cd/
+  144  cd /
+  145  pwd
+  146  ls
+  147  clear
+  148  cd home
+  149  cd /etc
+  150  pwd
+  151  ls
+  152  man ls
+  153  la -a
+  154  clear
+  155  ls -a
+  156  clear
+  157  cd
+  158  pwd
+  159  cut /etc
+  160  man ls
+  161  clear
+  162  ./system_audit_exam.sh
+  163  cd Desktop
+  164  ./system_audit_exam.sh
+  165  pwd
+  166  ls
+  167  cd Desktop
+  168  pwd
+  169  ls
+  170  ./test.sh
+  171  man cp
+  172  ./test.sh
+  173  sudo test.sh
+  174  ls
+  175  sudo ./test.sh
+  176  cd ./home
+  177  cd home
+  178  pwd
+  179  ..cd
+  180  .cd
+  181  cd
+  182  clear
+  183  pwd
+  184  ls
+  185  sudo ./test.sh
+  186  cd Desktop
+  187  sudo ./test.sh
+  188  man ls
+  189  pwd
+  190  ls -l
+  191  sudo ./test.sh
+  192  cat etc/passwd
+  193  cat /etc/passwd
+  194  cat -f /etc/passwd
+  195  man cat
+  196  cat -n /etc/passwd
+  197  man cat
+  198  cat -b /etc/passwd
+  199  clear
+  200  man cat
+  201  cat -bn /etc/passwd
+  202  man cat
+  203  man cut
+  204  cut -a -f1 /etc/passwd
+  205  cut -a f1 /etc/passwd
+  206  cut -d f1 /etc/passwd
+  207  cut -d -f1 /etc/passwd
+  208  cut -d: f1 /etc/passwd
+  209  cut -d: -f1 /etc/passwd
+  210  cut -d: -f0 /etc/passwd
+  211  cut -d: -f2 /etc/passwd
+  212  cut -d: -f1 /etc/passwd
+  213  man cat
+  214  cat -n /etc/passwd | cut -d: -f1 /etc/passwd
+  215  cat -n | cut -d: -f1 /etc/passwd
+  216  cat -n /etc/passwd | cut -d: -f1
+  217  cat -an /etc/passwd | cut -d: -f1
+  218  cat -a /etc/passwd | cut -d: -f1
+  219  man cat
+  220  cat -A /etc/passwd | cut -d: -f1
+  221  cat -An /etc/passwd | cut -d: -f1
+  222  cat -n /etc/passwd | cut -d: -f1
+  223  clear
+  224  cat -n /etc/passwd | cut -d: -f1
+  225  man cut
+  226  cat -n /etc/passwd | cut -d: -f0
+  227  wc -l < /etc/passwd
+  228  man wc
+  229  wc /etc/passwd
+  230  wc -l /etc/passwd
+  231  cd Desktop
+  232  ./test2.sh
+  233  ls /etc/passwd
+  234  cat /etc/passwd
+  235  cat /etc/group
+  236  clear
+  237  cat /etc/passwd
+  238  cut -d: -f1 /etc/passwd
+  239  cut -d: -f2 /etc/passwd
+  240  cut -d: -f3 /etc/passwd
+  241  cut -d: -f5 /etc/passwd
+  242  cut -d: -f6 /etc/passwd
+  243  cut -d: -f7 /etc/passwd
+  244  cut 
+  245  ./test2.sh
+  246  cat /etc/passwd
+  247  clear
+  248  ./test2.sh
+  249  cat /etc/group
+  250  awk -F: '{n=split($4,a,","); if(n>3) print $1}' /etc/group
+  251  ./test2.sh
+  252  ./test.sh
+  253  sodu ./test.sh
+  254  sudo ./test.sh
+  255  clear
+  256  mkdir linux_practice
+  257  cd linux_practice/
+  258  ls
+  259  nano log.txt
+  260  cat log.txt
+  261  head log
+  262  head log.txt
+  263  nano access.log
+  264  cat access.log
+  265  clear
+  266  head access.log
+  267  head -n 5 access.log
+  268  tail access.log
+  269  tail -n 5 access.log
+  270  less access.log
+  271  ls
+  272  cd desctop
+  273  cd Desctop
+  274  cd Desktop
+  275  ls
+  276  cd linux_practice/
+  277  less access.log
+  278  cd Desktop/
+  279  cd linux_practice/
+  280  cat access.log 
+  281  grep "$401" access.log 
+  282  grep "401" access.log 
+  283  clear
+  284  cat access.log 
+  285  grep "401" access.log 
+  286  grep "403$" access.log 
+  287  grep "500$" access.log 
+  288  grep "admin$" access.log 
+  289  grep "/admin$" access.log 
+  290  grep "/admin" access.log 
+  291  grep "admin" access.log 
+  292  grep "login" access.log 
+  293  grep "401" access.log | wc -l 
+  294  grep "403" access.log | wc -l 
+  295  grep "500" access.log | wc -l 
+  296  grep "/aadmin" access.log | wc -l 
+  297  grep "/admin" access.log | wc -l 
+  298  cut -f f1 access.log
+  299  cut -f- f1 access.log
+  300  cut -d' ' f1 access.log
+  301  cut -d'' f1 access.log
+  302  cut -d' ' -f1 access.log
+  303  cut -d' ' -f1 access.log | sort | uniq
+  304  cut -d' ' -f1 access.log | sort | uniq -c
+  305  grep "401" access.log | grep "/login"
+  306  grep "/login" access.log | grep "401" | cut -d' ' -f1
+  307  grep "/login" access.log | grep "401" | cut -d' ' -f1 | sort | uniq -c
+  308  grep "/login" access.log | grep "401" | cut -d' ' -f1 | sort | uniq -c | sort -nr
+  309  grep "/admin" access.log
+  310  grep "/admin" access.log | cut -d:' ' -f1
+  311  grep "/admin" access.log | cut -d' ' -f1
+  312  grep "/admin" access.log | cut -d' ' -f1 | sort | uniq -c | sort -nr
+  313  clear
+  314  grep "500" access.log > server_errors.log
+  315  grep "/admin" access.log > admin_attempts.log
+  316  grep "/login" access.log | grep "401" > failed_logins.log
+  317  cat server_errors.log 
+  318  cat admin_attempts.log 
+  319  gat failed_logins.log 
+  320  cat failed_logins.log 
+  321  cp access.log access_backup.log
+  322  mv access_backup.log old_access.log
+  323  mkdir archive
+  324  mv server_errors.log admin_attempts.log failed_logins.log archive/
+  325  ls
+  326  ls archive/
+  327  find . -name "*.log"
+  328  find . -type f
+  329  find . -type -d
+  330  find . -type d
+  331  tar -cvf archive.tar archive/
+  332  tar -tvf archive.tar
+  333  tar -xvf archive.tar
+  334  gzip archive.tar
+  335  gunzip archive.tar.gz
+  336  zip -r logs.zip archive/
+  337  unzip logs.zip
+  338  cd Dessktop
+  339  cd Desktop/
+  340  cd linux_practice/
+  341  cat access.log
+  342  grep "/login" access.log | grep "401"
+  343  grep "401" access.log 
+  344  grep "/login" access.log | grep "401"
+  345  grep "/login" access.log | grep "401" | sort
+  346  grep "/login" access.log | grep "401" | sort | uniq -n
+  347  grep "/login" access.log | grep "401" | sort | uniq -c
+  348  grep "/login" access.log | grep "401" | sort | uniq -c | sort -nr
+  349  grep "/login" access.log | grep "401" | cut -d' ' -f1
+  350  grep "/login" access.log | grep "401" | cut -d' ' -f1 | sort
+  351  grep "/login" access.log | grep "401" | cut -d' ' -f1 | sort | uniq -c
+  352  grep "/login" access.log | grep "401" | cut -d' ' -f1 | sort | uniq -c | sort -nr
+  353  grep "/login" access.log | grep "401" | cut -d' ' -f1 | sort -n
+  354  grep "/login" access.log | grep "401" | cut -d' ' -f1
+  355  grep "/login" access.log | grep "401" | cut -d' ' -f1 | sort -n
+  356  grep "/login" access.log | grep "401" | cut -d' ' -f1 | sort -nr
+  357  grep "/login" access.log | grep "401" | cut -d' ' -f1 | sort | uniq -c | sort -nr
+  358  clear
+  359  cat access.log 
+  360  grep "500" access.log 
+  361  grep "500" access.log > /archive/server_error.log
+  362  grep "500" access.log > server_error.log
+  363  mkdir archive
+  364  mv server_error.log /archive
+  365  mv server_error.log archive
+  366  grep "401" access.log > failed_logins.log
+  367  grep "401" access.log > admin_attempts.log
+  368  grep "/admin" access.log > admin_attempts.log
+  369  find . -name "/log*"
+  370  find . -name "*.log"
+  371  mkdir archive
+  372  mv admin_attempts.log server_error.log failed_logins.log archive
+  373  cd archive/
+  374  tar -cvf all_logs.tar *.log
+  375  cd ~
+  376  clear
+  377  mkdir level0
+  378  clear
+  379  cd Desktop/
+  380  mkdir level2
+  381  cd level2/
+  382  [200~nano access.log
+  383  nano access.log
+  384  cat access.log 
+  385  clear
+  386  head -n access.log 
+  387  head -n5 access.log 
+  388  tail -n5 access.log 
+  389  grep "/admin" access.log 
+  390  grep "/login" acc
+  391  grep "/login" access.log 
+  392  grep "/login" access.log | grep "401"
+  393  cut -d' ' -f1
+  394  cut -d' ' -f1 access.log 
+  395  cut -d' ' -f1 access.log | sort
+  396  cut -d' ' -f1 access.log | sort | uniq -c
+  397  cut -d' ' -f1 access.log | sort | uniq -c | sort -nr
+  398  grep "500" access.log 
+  399  grep "500" access.log > server_errors.log
+  400  grep "403" access.log > forbidden.log
+  401  grep "401" access.log > failed_logins.log
+  402  grep "/login" access.log | grep "401" > failed_logins.log
+  403  cat access.log 
+  404  cut -d' ' -f4 access.log 
+  405  cut -d' ' -f5 access.log 
+  406  cut -d' ' -f6 access.log 
+  407  cut -d' ' -f7 access.log 
+  408  cut -d' ' -f6 access.log 
+  409  cut -d' ' -f6 access.log | sort
+  410  cut -d' ' -f6 access.log | sort | uniq -c
+  411  cut -d' ' -f6 access.log | sort | uniq -c | sort -r
+  412  cut -d' ' -f6 access.log | sort | uniq -c | sort -nr
+  413  tar -cvf analysis.tar "*.log"
+  414  tar -cvf analysis.tar *.log
+  415  gzip analysis.tar
+  416  clear
+  417  cat access.log 
+  418  cut -d' ' -f1 access.log | sort | uniq -c | sort -nr
+  419  cut -d' ' -f1 access.log | sort | uniq -c | sort -nr | head -n5
+  420  grep "500" access.log
+  421  grep "500" access.log | cut -d' ' -f1
+  422  grep "500" access.log | cut -d' ' -f1 | sort | uniq -c | sort -nr
+  423  grep "401" access.log
+  424  grep "401" access.log | cut -d' ' -f1
+  425  grep "401" access.log | cut -d' ' -f1 | sort
+  426  grep "401" access.log | cut -d' ' -f1 | sort | uniq -c
+  427  grep "401" access.log | cut -d' ' -f1 | sort | uniq -c | sort -nr
+  428  echo "Top 5 IPs:" > report.txt
+  429  cut -d' ' -f1 access.log | sort | uniq -c | sort -nr | head -n5 >> report.txt
+  430  echo "" >> report.txt
+  431  echo "Top 5 error pages (500):" >> report.txt
+  432  grep " 500$" access.log | cut -d' ' -f7 | sort | uniq -c | sort -nr | head -n 5 >> report.txt
+  433  grep " 500$" access.log | cut -d' ' -f6 | sort | uniq -c | sort -nr | head -n 5 >> report.txt
+  434  clear
+  435  grep "/admin" access.log 
+  436  grep "/admin" access.log | grep "401"
+  437  grep "/admin" access.log | grep "401" | cut -d' ' -f1
+  438  grep "/admin" access.log | grep "401" | cut -d' ' -f1 | sort | uniq -c | sort -nr
+  439  grep "/admin" access.log | grep "401" | cut -d' ' -f1 | sort | uniq
+  440  grep "/admin" access.log | sort | uniq
+  441  grep "/admin" access.log | sort | uniq > admin.txt
+  442  grep "401" access.log | sort | uniq > failed.txt
+  443  grep -Fxf admin.txt failed.txt
+  444  grep -Fxf failed.txt admin.txt
+  445  tar -cvf final_report.tar report.txt *.log
+  446  gzip final_report.tar
+  447  clear
+  448  grep '401' access.log 
+  449  grep '401' access.log | grep '403'
+  450  grep '401|403' access.log
+  451  grep '401&403' access.log
+  452  grep '401 & 403' access.log
+  453  grep '401' access.log
+  454  grep '401' '403' access.log
+  455  grep '401' access.log
+  456  man grep
+  457  grep -E '401|403' access.log 
+  458  cat access.log 
+  459  grep -E '401|403' access.log | cut -d' ' -f1
+  460  grep -E '401|403' access.log | cut -d' ' -f1 | sort
+  461  grep -E '401|403' access.log | cut -d' ' -f1 | sort | uniq
+  462  grep -E '401|403' access.log | cut -d' ' -f1 | sort | uniq -c
+  463  grep -E '401|403' access.log | cut -d' ' -f1 | sort | uniq -c | sort -rn
+  464  grep -E '401|403' access.log | cut -d' ' -f1 | sort | uniq -c
+  465  man awk
+  466  grep -E '401|403' access.log | cut -d' ' -f1 | sort | uniq -c | awk '$1'
+  467  grep -E '401|403' access.log | cut -d' ' -f1 | sort | uniq -c | awk '$1 > 3'
+  468  grep -E "401|403" access.log | cut -d' ' -f1 | sort | uniq -c | awk '$1 > 3' > high_risk.txt
+  469  sed 's/HTTP/http/g' access.log
+  470  sed '/200$/d' access.log 
+  471  sed '/200/d' access.log 
+  472  clear
+  473  cat access.log 
+  474  sed '/200/d' access.log 
+  475  sed -e 's/GET/Read/g' -e 's/POST/Write/g' access.log
+  476  sed 's/ //g' access.log
+  477  sed '/403/d' access.log
+  478  sed '/403/d' access.log > no_forbidden.log
+  479  cut -d:' ' access.log
+  480  cut -d:' ' -f1 access.log
+  481  clear
+  482  cut -d:' ' -f1 access.log 
+  483  cut -d:' ' -f1 access.log
+  484  cut -d' ' -f1 access.log
+  485  awk '$1 {print 1}' access.log 
+  486  awk '$2 {print 2}' access.log 
+  487  awk '{print $1}' access.log 
+  488  awk '{print $1,$6}' access.log 
+  489  awk -F' ' '{print $1,$6}' access.log 
+  490  awk '{print $1,$6}' access.log 
+  491  awk '$9' access.log 
+  492  awk '$9 = 500 {print $1,$6]' access.log 
+  493  awk '$9 = 500 {print $1, $6}' access.log 
+  494  awk '{print $9}' access.log 
+  495  awk '{print $8}' access.log 
+  496  awk '$8 = 500 {print $1, $6}' access.log 
+  497  awk '{$8 = 500 print $1, $6}' access.log 
+  498  awk '{$8 = 500, print $1, $6}' access.log 
+  499  awk '{$8 = 500; print $1, $6}' access.log 
+  500  awk '{$8=500; print $1, $6}' access.log 
+  501  awk {print $1, $6, $8}' access.log 
+  502  awk '{print $1, $6, $8}' access.log 
+  503  awk '$8=500 {print $1, $6, $8}' access.log 
+  504  awk '$8 == 500 {print $1, $6, $8}' access.log 
+  505  awk '$8 == 500 {print $1, $6}' access.log 
+  506  awk '{count[$1]++} END {for (ip in count) print ip, count[ip] }' access.log
+  507  awk '{count[$1]++} END {for (ip in count) print ip, count[ip] }' access.log | sort -nr
+  508  awk '{count[$1]++} END {for (ip in count) print ip, count[ip] }' access.log | sort k2 -nr
+  509  awk '{count[$1]++} END {for (ip in count) print ip, count[ip] }' access.log | sort -k2 -nr
+  510  clear
+  511  زی ÷
+  512  cd ~
+  513  V
+  514  ps
+  515  ps aux
+  516  ps aux | grep nginx
+  517  ps aux | grep splash
+  518  top
+  519  htop
+  520  sudo atp install htop
+  521  sudo apt install htop
+  522  htop
+  523  systemctl list-units --type=service
+  524  ip addr
+  525  ip route
+  526  curl https://google.com
+  527  sudo apt install curl
+  528  curl https://google.com
+  529  curl -I https://google.com
+  530  curl https://google.com
+  531  apt
+  532  apt install
+  533  sudo apt update
+  534  sudo apt upgrade
+  535  df
+  536  df -h
+  537  ls
+  538  du Desktop
+  539  du -h  /Desktop
+  540  du -h Desktop/
+  541  du -sh Desktop/
+  542  du -h --max-depth=1 Desktop/
+  543  clear
+  544  lsblk
+  545  du -sh /* Desktop/
+  546  clear
+  547  du -sh /*
+  548  cd Desktop/
+  549  du -sh /*
+  550  clear
+  551  cd ~
+  552  clear
+  553  blkid
+  554  زمثشق
+  555  clear
+  556  cat /etc/os-release 
+  557  uname -m
+  558  uname -r
+  559  mkdir src
+  560  clear
+  561  sudo apt install git
+  562  ls
+  563  cd Dow
+  564  cd Downloads/
+  565  ls
+  566  mv Anaconda3-2024.10-1-Linux-x86_64.sh ~/src/
+  567  cd ~
+  568  clear
+  569  cd src
+  570  bash Anaconda3-2024.10-1-Linux-x86_64.sh 
+  571  docker pull registry.k8s.io/pause:3.9
+  572  sudo systemctl daemon-reexec
+  573  sudo systemctl restart docker
+  574  docker pull hello-world
+  575  clear
+  576  docker pull hello-world
+  577  ping google.com
+  578  curl https://docker.m.daocloud.io/v2/
+  579  conda deactivate
+  580  curl https://docker.m.daocloud.io/v2/
+  581  ping 8.8.8.8
+  582  docker pull docker.m.daocloud.io/library/hello-world
+  583  clear
+  584  sudo systemctl daemon-reload
+  585  sudo systemctl restart docker
+  586  docker pull hello-world
+  587  sudo docker pull hello-world
+  588  docker login
+  589  git -v
+  590  clear
+  591  sudo apt install -y docker.io
+  592  sudo systemctl enable --now docker
+  593  docker --version
+  594  docker run hello-world
+  595  sudo docker run hello-world
+  596  clear
+  597  docker --version
+  598  sudo docker run hello-world
+  599  clear
+  600  cat /etc/os-release 
+  601  docker --version
+  602  sudo docker run hello-world
+  603  sudo mkdir -p /etc/docker
+  604  sudo nano /etc/docker/daemon.json
+  605  sudo systemctl daemon-reload
+  606  sudo systemctl restart docker
+  607  docker pull hello-world
+  608  sudo docker pull hello-world
+  609  docker login
+  610  sudo docker login
+  611  sudo usermod -aG docker $USER
+  612  clear
+  613  docker pull hello-world
+  614  sudo systemctl daemon-reload
+  615  sudo systemctl restart docker
+  616  [200~docker pull hello-world
+  617  docker pull hello-world
+  618  sudo docker pull hello-world
+  619  docker run hello-world
+  620  sudo docker run hello-world
+  621  clear
+  622  sudo docker pull quay.io/prometheus/busybox:latest
+  623  sudo docker pull registry.k8s.io/pause:3.9
+  624  sudo usermod -aG docker $USER
+  625  newgrp docker
+  626  curl http://example.com
+  627  curl http://neverssl.com
+  628  nslookup google.com
+  629  ping google.com
+  630  curl -v -k https://localhost:8443
+  631  mkdir mohsenpour_network_02
+  632  cd Desktop/
+  633  ls
+  634  cd mohsenpour_network_02
+  635  mkdir cenario_1
+  636  cd cenario_1/
+  637  clear
+  638  sudo apt update && sudo apt install openssl -y
+  639  cd ..
+  640  cd cenario_1_SSL/
+  641  mkdir certs
+  642  cd certs/
+  643  openssl req -x509 -newkey rsa:2048 -nodes -keyout myapp.key -out myapp.crt -days 365 -subj "/C=IR/ST=Tehran/L=Tehran/O=MyCompany/CN=myapp.local"
+  644  openssl x509 -in myapp.crt -text -noout
+  645  openssl rsa -in myapp.key -check
+  646  cd ..
+  647  nano ssl_generation.txt
+  648  nano test_https.sh
+  649  chmod +x test_https.sh
+  650  ./test_https.sh
+  651  nano https_server.py
+  652  python3 https_server.py
+  653  nano https_server.py
+  654  python3 https_server.py
+  655  nano https_server_test.txt
+  656  python3 https_server.py
+  657  clear
+  658  nano ssl_best_practices.md
+  659  cd.. 
+  660  cd ..
+  661  mkdir cenario_2_FTP
+  662  cd cenario_2_FTP/
+  663  nano setup_ftp.sh
+  664  chmod +x setup_ftp.sh
+  665  ./setup_ftp.sh
+  666  cat /etc/vsftpd.conf
+  667  nano ftp_setup_guide.txt
+  668  sudo ufw allow 21/tcpsudo ufw allow 40000:50000/tcp
+  669  sudo ufw allow 21/tcp
+  670  sudo ufw allow 40000:50000/tcp
+  671  ./setup_ftp.sh
+  672  clear
+  673  nano ftp_operations.sh
+  674  chmod +x ftp_operations.sh
+  675  ./ftp_operations.sh 
+  676  nano ftp_operations_guide.txt
+  677  nano file_transfer_comparison.md
+  678  clear
+  679  cd ..
+  680  mkdir cenario_3_HTTP
+  681  cd cenario_3_HTTP
+  682  nano http_server.py
+  683  clear
+  684  chmod +x http_server.py
+  685  ./http_server.py
+  686  nano index.html
+  687  ./http_server.py
+  688  clear
+  689  nano http_server_guide.txt
+  690  nano test_http_methods.sh
+  691  chmod +x test_http_methods.sh
+  692  ./test_http_methods.sh
+  693  nano http_headers_analysis.txt
+  694  nano ssh_tunneling_guide.md
+  695  nano sshd_config_hardened
+  696  nano ssh_security_guide.txt
+  697  clear
+  698  cd Desktop/
+  699  ls
+  700  cd mohsenpour_network_02
+  701  cd scenario_6_Monitoring
+  702  nano network_monitor.sh
+  703  chmod +x network_monitor.sh
+  704  ./network_monitor.sh
+  705  ip a
+  706  nano network_monitor.sh
+  707  ./network_monitor.sh
+  708  nano network_monitor.sh
+  709  ./network_monitor.sh
+  710  clear
+  711  ./network_monitor.sh
+  712  nano analyze_logs.sh
+  713  chmod +x analyze_logs.sh
+  714  ./analyze_logs.sh
+  715  clear
+  716  nano dashboard.sh
+  717  chmod +x dashboard.sh
+  718  ./dashboard.sh
+  719  nano dashboard_screenshot.txt
+  720  clear
+  721  cd ..
+  722  cd scenario_7_Troubleshooting
+  723  nano nano troubleshoot_website.md
+  724  nano diagnose_slow_network.sh
+  725  chmod +x diagnose_slow_network.sh
+  726  ./diagnose_slow_network.sh
+  727  clear
+  728  nano timeout_test.sh
+  729  chmod +x timeout_test.sh
+  730  ./timeout_test.sh
+  731  clear
+  732  cd ..
+  733  history > commands_history.txt

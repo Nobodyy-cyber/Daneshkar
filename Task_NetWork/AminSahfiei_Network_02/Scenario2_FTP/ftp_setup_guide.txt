@@ -1,0 +1,22 @@
+# FTP Server Setup Guide
+
+## Overview
+This guide covers the deployment of vsftpd (Very Secure FTP Daemon) on a Linux system.
+
+## Key Commands
+- Start service: sudo systemctl start vsftpd
+- Stop service: sudo systemctl stop vsftpd
+- Restart service: sudo systemctl restart vsftpd
+- Check status: sudo systemctl status vsftpd
+
+## Configuration Explanation
+- anonymous_enable=NO: Prevents unauthenticated users from accessing the server.
+- local_enable=YES: Allows local system users to log in.
+- write_enable=YES: Enables FTP commands like STOR, DELE, etc.
+- chroot_local_user=YES: Locks users into their home directory for security.
+
+## Testing
+To test the FTP connection:
+1. Connect via terminal: ftp localhost
+2. Login with 'ftpuser' and the configured password.
+3. Try uploading a file: put test.txt

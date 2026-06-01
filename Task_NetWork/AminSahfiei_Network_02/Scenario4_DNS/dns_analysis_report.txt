@@ -1,0 +1,10 @@
+DNS Query Analysis Report
+Generated on: Thu May 21 06:53:07 PM EDT 2026
+-------------------------------------------------------------
+Domain               IP Address           TTL        DNS Server           Query(ms) 
+-------------------------------------------------------------
+google.com           216.239.38.120       <<>>       SERVER:              36        
+github.com           140.82.121.3         <<>>       SERVER:              30        
+stackoverflow.com    198.252.206.1        <<>>       SERVER:              32        
+linkedin.com         150.171.22.12        <<>>       SERVER:              23        
+-------------------------------------------------------------
