@@ -1,0 +1,7 @@
+CONTAINER ID   IMAGE           COMMAND                  CREATED             STATUS                          PORTS                                     NAMES
+f2fa40fc9199   alpine:latest   "sleep"                  About an hour ago   Restarting (1) 58 seconds ago                                             unless-stopped
+bd0c265cfa50   alpine:latest   "sleep 5"                About an hour ago   Restarting (0) 17 seconds ago                                             always-restart
+f2ba65b52b0a   alpine:latest   "sh -c 'for i in $(s…"   About an hour ago   Exited (0) 22 minutes ago                                                 log-test
+8f58c9c79a1a   alpine:latest   "sleep 3600"             2 hours ago         Exited (0) 44 minutes ago                                                 exec-test
+84fc23789e99   nginx:alpine    "/docker-entrypoint.…"   2 hours ago         Up 2 hours                      0.0.0.0:8888->80/tcp, [::]:8888->80/tcp   web-server
+931f15531f22   nginx:alpine    "/docker-entrypoint.…"   2 hours ago         Exited (0) 2 hours ago                                                    test-nginx
