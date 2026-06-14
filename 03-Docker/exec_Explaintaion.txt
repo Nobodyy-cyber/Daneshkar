@@ -1,0 +1,9 @@
+##Docker attach
+Connects to the existing running process (main process)
+Usually stops the container
+Need to see what the main process is outputting
+
+##Docker exec
+Runs a new process inside container
+Stops only the exec process
+Need to run a command inside

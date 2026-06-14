@@ -1,0 +1,26 @@
+#!/bin/bash
+
+echo ' ==== Started ==== '
+set -e 
+sudo apt update
+sudo systemctl enable docker
+sudo systemctl start docker
+
+docker --version >> docker_version.txt
+docker info  | head -n20 >> docker_version.txt
+
+sudo systemctl status docker --no-pager | head -n15
+docker ps -a
+
+
+docker pull nginx:alpine
+docker images | grep nginx
+docker tag nginx:alpine my-enginx:v1.0
+docker images | grep -E 'nginx | my-nginx'
+docker inspect nginx:alpine | grep -A 5 "Architecture"
+docker rmi my-nginx:v1.0
+
+
+docker history nginx:alpine --no-trunc >> image_history.txt
+docker inspect nginx:alpine | grep -A 10 "RootFS" >> image_rootfs.txt
+docker image inspect nginx:alpine --format '{{.Size}}' >> image_size_bytes.txt
