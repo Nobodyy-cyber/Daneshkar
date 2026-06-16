@@ -1,3 +1,0 @@
-            "RestartPolicy": {
-                "Name": "always",
-                "MaximumRetryCount": 0

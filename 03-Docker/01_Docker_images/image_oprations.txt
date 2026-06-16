@@ -1,1 +1,0 @@
-Untagged: my-nginx:v1.0

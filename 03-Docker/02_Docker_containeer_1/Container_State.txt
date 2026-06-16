@@ -1,4 +1,0 @@
-        "State": {
-            "Status": "exited",
-            "Running": false,
-            "Paused": false,
