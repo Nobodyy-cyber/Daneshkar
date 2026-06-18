@@ -1,0 +1,46 @@
+#########################
+#########################
+
+1. What is a Health Check?
+
+A Health Check is a test that regularly asks a service: "Are you alive and working properly?"
+It's usually an HTTP request, a ping, or a simple database query.
+
+Common types:
+
+    Liveness Probe → Is the app still running? If not, restart it.
+
+    Readiness Probe → Is the app ready to handle traffic? If not, stop sending requests.
+
+    Startup Probe → Has the app fully started? Used for slow-starting apps.
+########################
+########################
+
+2. When is a Health Check executed?
+
+    Periodically – every few seconds or minutes (set by you).
+
+    On startup – to make sure the app is fully ready before it gets traffic.
+
+    After restarts or updates – to confirm the new version works.
+
+    On-demand – when an external monitoring tool (like Prometheus) calls it.
+
+    In Kubernetes, you define when it runs using initialDelaySeconds (wait before first check) and periodSeconds (how often).
+
+#######################
+#######################
+
+3. Why are Health Checks important?
+
+    High Availability – automatically detect failures and fix them fast.
+
+    Less Downtime – catch issues early before users notice.
+
+    Smart Traffic Routing – load balancers only send requests to healthy services.
+
+    Self-Healing – unhealthy instances get restarted or replaced automatically.
+
+    Easy Debugging – health logs show exactly when and where problems start.
+
+    Safe Deployments – new versions only receive traffic after passing their health check

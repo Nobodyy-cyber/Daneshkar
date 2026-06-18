@@ -1,0 +1,56 @@
+[
+    {
+        "Name": "my-network",
+        "Id": "e73b787100362025c2708a317d2c3fd0d83a6b165e969fed8f4c8ae973c4765b",
+        "Created": "2026-06-18T06:53:06.009409975-05:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {},
+        "Labels": {},
+        "Containers": {
+            "495d9603be4fbaee88a13f3353768fbab98e7c477b50687c4681c1730552a79e": {
+                "Name": "container1",
+                "EndpointID": "d11c97f588a61059302b510aed776a993b7aebb2894cb72a3a38f56411d9a653",
+                "MacAddress": "6e:86:b0:3e:fd:cc",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            },
+            "836854dafcd611a5d7011cd761c5a40ca00f1b68b916631541d39bb4a14394f2": {
+                "Name": "container2",
+                "EndpointID": "dd1aa9eb7b00560f4811190b3c6a38639920fcc9891db39f8e9482af0a15b4e5",
+                "MacAddress": "5e:c1:16:ac:01:df",
+                "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "172.18.0.0/16": {
+                        "IPsInUse": 5,
+                        "DynamicIPsAvailable": 65531
+                    }
+                }
+            }
+        }
+    }
+]

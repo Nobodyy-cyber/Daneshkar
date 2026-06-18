@@ -1,0 +1,28 @@
+#####
+
+- Why container-a cannot ping to container-b ??
+ 
+** ping: bad address 'container-b
+
+####
+
+- whats Happen after docker  network connect ??
+  
+ **connect a Execute Container to the Network
+
+####
+
+- whats Differenc Between Bridge network And custom network ??
+
+ **CUSTOM NETWORK:
+   - containers can reach each other by their container name
+
+   - only containers you explicitly connect can talk to each other
+   - you can connect/disconnect a running container using
+
+
+ **BRIDGE NETWORK:
+  - containers can ONLY reach each other by IP address (or using the outdated --link
+  - All containers join automatically less secure, everything is exposed to each other by default
+  - Cannot connect/disconnect while running — you must stop and restart the container
+####

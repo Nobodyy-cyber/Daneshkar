@@ -1,0 +1,18 @@
+NETWORK ID     NAME         DRIVER    SCOPE
+1ceed8ab5785   bridge       bridge    local
+eaaa6932c8b9   host         host      local
+e73b78710036   my-network   bridge    local
+6f0dba7e3ea1   network-a    bridge    local
+62f1a47ad108   network-b    bridge    local
+e9ab575696a9   none         null      local
+        "Containers": {},
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "172.17.0.0/16": {
+                        "IPsInUse": 3,
+                        "DynamicIPsAvailable": 65533
+                    }
+                }
+            }
+        }

@@ -1,0 +1,18 @@
+- VALUE OF IMAGE nginx:alpin is "93.6 MB"
+- TYPE OF ATCHITECTURE THIS IMAGE " amd64  "
+- DIFFERENC OF DOCKER PULL && DOCKER RUN
+""  
+docker pull we in this step Download and save image in our disk but we cant execute this
+.
+.
+BUT 
+.
+.
+docker run we install image and run the container
+""
+====================================================================
+REPOSITORY    TAG       SIZE
+nginx         latest    241MB
+my-enginx     v1.0      93.6MB
+nginx         alpine    93.6MB
+hello-world   latest    25.9kB

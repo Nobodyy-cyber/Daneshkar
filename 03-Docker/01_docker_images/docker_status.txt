@@ -1,0 +1,3 @@
+sudo systemctl status docker --no-pager | head -n 15
+docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES

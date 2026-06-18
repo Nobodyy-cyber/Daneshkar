@@ -1,0 +1,10 @@
+Layers "8"
+Value OF The Biggest Layer "51.9 MB"
+Reason Of Use Alpine Image
+** 
+TinySize (~5 MB) → faster pulls,less storage,lower attack surface
+
+Security – minimal packages, fewer vulnerabilities
+
+Great for microservices and CI/CD where speed matters
+**
