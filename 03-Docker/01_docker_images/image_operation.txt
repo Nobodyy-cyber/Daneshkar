@@ -1,1 +1,29 @@
+alpine: Pulling from library/nginx
+Digest: sha256:20316569d8f81a160065d7d2a5eeffc7ca97d79022462ee255fd23fa103a6b5c
+Status: Image is up to date for nginx:alpine
+docker.io/library/nginx:alpine
+1th-nginx:v1.0       20316569d8f8        102MB         29.4MB        
+my-enginx:v1.0       8b1e78743a03       93.6MB           27MB        
+nginx:alpine         20316569d8f8        102MB         29.4MB        
+nginx:latest         608a100c7165        241MB           66MB        
+1th-nginx:v1.0       20316569d8f8        102MB         29.4MB        
+my-enginx:v1.0       8b1e78743a03       93.6MB           27MB        
+my-nginx:v1.0        20316569d8f8        102MB         29.4MB        
+nginx:alpine         20316569d8f8        102MB         29.4MB        
+nginx:latest         608a100c7165        241MB           66MB        
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 28550853,
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
 Untagged: my-nginx:v1.0
+REPOSITORY    TAG       SIZE
+1th-nginx     v1.0      102MB
+nginx         alpine    102MB
+haproxy       alpine    65.9MB
+alpine        latest    13MB
+nginx         latest    241MB
+my-enginx     v1.0      93.6MB
+mysql         8.0       1.1GB
+hello-world   latest    25.9kB

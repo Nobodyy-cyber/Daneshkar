@@ -16,6 +16,6 @@ Server:
   Running: 0
   Paused: 0
   Stopped: 0
- Images: 3
+ Images: 7
  Server Version: 29.5.3
  Storage Driver: overlayfs

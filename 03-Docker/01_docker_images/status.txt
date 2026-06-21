@@ -1,0 +1,23 @@
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-06-21 06:17:36 CDT; 1h 19min ago
+TriggeredBy: ● docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 1099 (dockerd)
+      Tasks: 24
+     Memory: 76.4M (peak: 180.5M swap: 8.4M swap peak: 10.4M)
+        CPU: 5.224s
+     CGroup: /system.slice/docker.service
+             └─1099 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Jun 21 06:45:55 devops dockerd[1099]: time="2026-06-21T06:45:55.862218549-05:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Unknown desc = process \"/bin/sh -c npm install\" did not complete successfully: exit code: 254" spanID=549afbd0dade38c5 traceID=1e2c7ca0c443d46fd7ff929852b21a4a
+Jun 21 06:46:00 devops dockerd[1099]: time="2026-06-21T06:46:00.033187677-05:00" level=warning msg="healthcheck failed" actualDuration="521.742µs" error="Unavailable: connection error: desc = \"transport: Error while dialing: only one connection allowed\"" timeout=15s
+Jun 21 06:46:05 devops dockerd[1099]: time="2026-06-21T06:46:05.032684117-05:00" level=error msg="healthcheck failed fatally" error="session healthcheck failed fatally: Unavailable: connection error: desc = \"transport: Error while dialing: only one connection allowed\""
+Jun 21 06:46:29 devops dockerd[1099]: time="2026-06-21T06:46:29.465144839-05:00" level=info msg="sbJoin: gwep4 ''->'97b63356de3e', gwep6 ''->''"
+Jun 21 06:46:30 devops dockerd[1099]: time="2026-06-21T06:46:30.124203692-05:00" level=warning msg="failed to read oom_kill event" error="open /sys/fs/cgroup/system.slice:docker:i4y7r1p53mm6buyltd5kfyv5t/memory.events: no such file or directory" span="[builder 4/6] RUN npm install" spanID=ecc4708ae450978a traceID=f10b9ef6dd48813dcdd47a918dae3e76
+Jun 21 06:46:30 devops dockerd[1099]: time="2026-06-21T06:46:30.187681520-05:00" level=error msg=/moby.buildkit.v1.Control/Solve error="rpc error: code = Unknown desc = process \"/bin/sh -c npm install\" did not complete successfully: exit code: 254" spanID=87164828a8730332 traceID=f10b9ef6dd48813dcdd47a918dae3e76
+Jun 21 06:46:32 devops dockerd[1099]: time="2026-06-21T06:46:32.588595170-05:00" level=warning msg="healthcheck failed" actualDuration="587.263µs" error="Unavailable: connection error: desc = \"transport: Error while dialing: only one connection allowed\"" timeout=15s
+Jun 21 06:46:32 devops dockerd[1099]: time="2026-06-21T06:46:32.607688968-05:00" level=warning msg="healthcheck failed" actualDuration="435.163µs" error="Unavailable: connection error: desc = \"transport: Error while dialing: only one connection allowed\"" timeout=15s
+Jun 21 06:46:37 devops dockerd[1099]: time="2026-06-21T06:46:37.588578033-05:00" level=error msg="healthcheck failed fatally" error="session healthcheck failed fatally: Unavailable: connection error: desc = \"transport: Error while dialing: only one connection allowed\""
+Jun 21 06:46:37 devops dockerd[1099]: time="2026-06-21T06:46:37.608135892-05:00" level=error msg="healthcheck failed fatally" error="session healthcheck failed fatally: Unavailable: connection error: desc = \"transport: Error while dialing: only one connection allowed\""
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
