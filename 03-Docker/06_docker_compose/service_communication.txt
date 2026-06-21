@@ -1,0 +1,8 @@
+time="2026-06-14T20:49:44+03:30" level=warning msg="/home/dehghani/Codes/daneshkar/docker_danseshkar/docker_homework/06_docker_compose/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+PING app (172.21.0.2): 56 data bytes
+64 bytes from 172.21.0.2: seq=0 ttl=64 time=0.049 ms
+64 bytes from 172.21.0.2: seq=1 ttl=64 time=0.215 ms
+
+--- app ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 0.049/0.132/0.215 ms

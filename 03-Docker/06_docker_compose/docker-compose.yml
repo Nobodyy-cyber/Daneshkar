@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+    depends_on:
+      - app
+
+  app:
+    image: alpine:latest
+    command: sh -c "apk add --no-cache python3 && python3 -m http.server ${APP_PORT}"
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    volumes:
+      - ./app:/app
+    working_dir: /app
+
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    volumes:
+      - db-data:/var/lib/mysql
+
+volumes:
+  db-data:

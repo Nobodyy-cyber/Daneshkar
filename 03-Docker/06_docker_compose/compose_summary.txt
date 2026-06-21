@@ -1,3 +1,16 @@
-####
-- Answer Q1:
-  **
+1. چه network هایی توسط compose-docker ایجاد شد؟
+به bridge متصل است 
+
+2. چه volume هایی ایجاد شد؟
+Bind Mount
+06_docker_compose_db-data
+ایجاد شده که
+06_docker_compose 
+اسم پروژه یا پوشه پروژه است و
+db-data
+اسم 
+volume
+است
+
+3.چگونه سرویس webبه سرویس appدسترسی دارد؟
+سرویس web از طریق شبکه پیش‌فرض Docker Compose (06_docker_compose_default) و DNS داخلی Docker با نام سرویس app به سرویس app دسترسی دارد.

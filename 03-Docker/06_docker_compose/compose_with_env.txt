@@ -1,0 +1,59 @@
+time="2026-06-14T21:43:47+03:30" level=warning msg="/home/dehghani/Codes/daneshkar/docker_danseshkar/docker_homework/06_docker_compose/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+name: 06_docker_compose
+services:
+  app:
+    command:
+      - sh
+      - -c
+      - apk add --no-cache python3 && python3 -m http.server 3000
+    image: alpine:latest
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 3000
+        published: "3000"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /home/dehghani/Codes/daneshkar/docker_danseshkar/docker_homework/06_docker_compose/app
+        target: /app
+        bind: {}
+    working_dir: /app
+  db:
+    environment:
+      MYSQL_DATABASE: mydb
+      MYSQL_ROOT_PASSWORD: mysecretpassword
+    image: mysql:8.0
+    networks:
+      default: null
+    volumes:
+      - type: volume
+        source: db-data
+        target: /var/lib/mysql
+        volume: {}
+  web:
+    depends_on:
+      app:
+        condition: service_started
+        required: true
+    image: nginx:alpine
+    networks:
+      default: null
+    ports:
+      - mode: ingress
+        target: 80
+        published: "8080"
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: /home/dehghani/Codes/daneshkar/docker_danseshkar/docker_homework/06_docker_compose/web
+        target: /usr/share/nginx/html
+        read_only: true
+        bind: {}
+networks:
+  default:
+    name: 06_docker_compose_default
+volumes:
+  db-data:
+    name: 06_docker_compose_db-data

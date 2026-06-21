@@ -1,0 +1,4 @@
+time="2026-06-14T23:21:27+03:30" level=warning msg="/home/dehghani/Codes/daneshkar/docker_danseshkar/docker_homework/07_sample_project/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+NAME                             IMAGE                          COMMAND                  SERVICE      CREATED         STATUS         PORTS
+07_sample_project-nginx-1        nginx:alpine                   "/docker-entrypoint.…"   nginx        5 seconds ago   Up 5 seconds   0.0.0.0:3000->80/tcp, [::]:3000->80/tcp
+07_sample_project-python-app-1   07_sample_project-python-app   "python app.py"          python-app   5 seconds ago   Up 5 seconds   
