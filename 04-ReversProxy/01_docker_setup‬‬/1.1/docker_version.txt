@@ -1,0 +1,38 @@
+Docker version 29.2.0, build 0b9d198
+Client: Docker Engine - Community
+ Version:    29.2.0
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.31.1
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v5.0.2
+    Path:     /usr/libexec/docker/cli-plugins/docker-compose
+
+Server:
+ Containers: 2
+  Running: 0
+  Paused: 0
+  Stopped: 2
+ Images: 7
+ Server Version: 29.2.0
+ Storage Driver: overlayfs
+CONTAINER ID   IMAGE           COMMAND     CREATED      STATUS                          PORTS     NAMES
+c774e5e713ea   alpine:latest   "sleep 5"   2 days ago   Restarting (0) 42 seconds ago             unless-stopped
+f13df352a5a8   alpine:latest   "sleep 5"   2 days ago   Restarting (0) 42 seconds ago             always-restart
+NETWORK ID     NAME                     DRIVER    SCOPE
+34b9454fa242   bridge                   bridge    local
+0648ed516fec   host                     host      local
+cdf56f3f42b2   my-network               bridge    local
+08b0922c6ef1   network-a                bridge    local
+3ff810b80d69   network-b                bridge    local
+87846b4e402d   none                     null      local
+e85b87d63aa1   sample-project-network   bridge    local
+DRIVER    VOLUME NAME
+local     4d07ba0bd7d00e7cd71ff33ee9f34e04635dd54a2de3634b4d1d7e2f30fd28d2
+local     06_docker_compose_db-data
+local     backup-test
+local     my-data
+local     restore-test

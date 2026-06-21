@@ -1,0 +1,35 @@
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          7         1         2.666GB   13.29MB (0%)
+Containers      2         2         8.192kB   0B (0%)
+Local Volumes   5         0         393.8MB   393.8MB (100%)
+Build Cache     22        0         266.1MB   91.49kB
+[
+    {
+        "Name": "bridge",
+        "Id": "34b9454fa24290993e55f82c3c67e44f14b4b9db58f1a5f31de3e8e810c8eb2e",
+        "Created": "2026-06-17T10:41:37.927793919+03:30",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": null,
+            "Config": [
+                {
+                    "Subnet": "172.17.0.0/16",
+                    "Gateway": "172.17.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {
+            "com.docker.network.bridge.default_bridge": "true",
+            "com.docker.network.bridge.enable_icc": "true",
+            "com.docker.network.bridge.enable_ip_masquerade": "true",

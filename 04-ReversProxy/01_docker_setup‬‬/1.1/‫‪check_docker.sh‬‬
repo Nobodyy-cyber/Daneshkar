@@ -1,0 +1,9 @@
+#!/bin/bash
+docker --version &> docker_version.txt
+docker info | head -n 20 &>> docker_version.txt
+docker ps -a &>> docker_version.txt
+docker network ls &>> docker_version.txt
+docker volume ls &>> docker_version.txt
+
+docker system df &> docker_status.txt
+docker network inspect bridge | head -n 30 &>> docker_status.txt

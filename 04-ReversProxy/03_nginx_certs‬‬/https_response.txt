@@ -1,0 +1,10 @@
+HTTPS OKnotBefore=Jun 20 08:54:29 2026 GMT
+notAfter=Jun 20 08:54:29 2027 GMT
+
+docker port nginx-https 
+443/tcp -> 0.0.0.0:8443
+443/tcp -> [::]:8443
+
+ss -tuln | grep -E ':8443'
+tcp   LISTEN 0      4096                              0.0.0.0:8443       0.0.0.0:*          
+tcp   LISTEN 0      4096                                 [::]:8443          [::]:*          

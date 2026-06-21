@@ -1,0 +1,4 @@
+haproxy:alpine                        7f6baed2102a       65.9MB         20.7MB        
+nginx:alpine                          8b1e78743a03       93.6MB           27MB        
+python:3.9-alpine                     c99b6eb43b3a       80.4MB         20.4MB        
+traefik:v3.0                          a208c74fd80a        222MB         47.5MB        

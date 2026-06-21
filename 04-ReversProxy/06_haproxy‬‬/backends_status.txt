@@ -1,0 +1,2 @@
+afe16c7fd3d2   nginx:alpine   "/docker-entrypoint.…"   2 seconds ago   Up 2 seconds   0.0.0.0:8181->80/tcp, [::]:8181->80/tcp   backend2
+75546b6c42cd   nginx:alpine   "/docker-entrypoint.…"   2 seconds ago   Up 2 seconds   0.0.0.0:8180->80/tcp, [::]:8180->80/tcp   backend1

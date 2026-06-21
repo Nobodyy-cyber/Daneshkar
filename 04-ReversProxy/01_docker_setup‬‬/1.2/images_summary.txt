@@ -1,0 +1,5 @@
+REPOSITORY                     TAG          SIZE
+haproxy                        alpine       65.9MB
+nginx                          alpine       93.6MB
+python                         3.9-alpine   80.4MB
+traefik                        v3.0         222MB
