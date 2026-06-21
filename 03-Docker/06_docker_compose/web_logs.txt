@@ -7,4 +7,4 @@ web-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers
 web-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
 web-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
 web-1  | /docker-entrypoint.sh: Configuration complete; ready for start up
-web-1  | 2026/06/14 17:24:54 [notice] 1#1: using the "epoll" event method
+web-1  | 2026/06/21 15:59:42 [notice] 1#1: using the "epoll" event method
