@@ -1,0 +1,74 @@
+=== Ping Test ===
+localhost | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+
+=== Gather Facts ===
+localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_distribution": "Ubuntu",
+        "ansible_distribution_file_parsed": true,
+        "ansible_distribution_file_path": "/etc/os-release",
+        "ansible_distribution_file_variety": "Debian",
+        "ansible_distribution_major_version": "24",
+        "ansible_distribution_release": "noble",
+        "ansible_distribution_version": "24.04"
+    },
+    "changed": false
+}
+
+=== File Operations ===
+localhost | FAILED! => {
+    "changed": false,
+    "msg": "value of state must be one of: absent, directory, file, hard, link, touch, got: directorymode=0755"
+}
+localhost | SUCCESS => {
+    "changed": false,
+    "stat": {
+        "exists": false
+    }
+}
+
+=== Command Execution ===
+localhost | CHANGED | rc=0 >>
+ 21:46:59 up 13:03,  1 user,  load average: 0.45, 0.37, 0.32
+localhost | CHANGED | rc=0 >>
+/home/devops-homework
+devops-homework
+
+=== Copy File ===
+localhost | CHANGED => {
+    "changed": true,
+    "checksum": "31e179f65d8d69e747aa5daf93ad269c1b015ca7",
+    "dest": "/tmp/test_dest.txt",
+    "gid": 1000,
+    "group": "devops-homework",
+    "md5sum": "8f2146fa957421e3eeda907d3aae31d3",
+    "mode": "0664",
+    "owner": "devops-homework",
+    "size": 25,
+    "src": "/home/devops-homework/.ansible/tmp/ansible-tmp-1783016221.5079217-152487-84965712352963/source",
+    "state": "file",
+    "uid": 1000
+}
+
+=== Get URL ===
+localhost | FAILED! => {
+    "changed": false,
+    "dest": "/tmp/google.html",
+    "elapsed": 0,
+    "msg": "Request failed: <urlopen error [Errno -3] Temporary failure in name resolution>",
+    "url": "https://www.google.com"
+}
+
+=== Package Management ===
+[WARNING]: No inventory was parsed, only implicit localhost is available
+localhost | FAILED! => {
+    "changed": false,
+    "module_stderr": "sudo: a password is required\n",
+    "module_stdout": "",
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error",
+    "rc": 1
+}
+Skipped no sudo access

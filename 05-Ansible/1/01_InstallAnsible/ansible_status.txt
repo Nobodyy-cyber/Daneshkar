@@ -1,0 +1,5 @@
+which ansible
+ansible --version
+ansible-config dump | head -30
+python3 --version
+pip3 show ansible

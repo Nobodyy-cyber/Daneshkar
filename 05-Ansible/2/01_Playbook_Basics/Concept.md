@@ -1,0 +1,9 @@
+
+*PLAYBOOK*
+
+    FILE .YAML WRITE FOR AUTOMATION , USEABLE AGAIN AND DOCUMATION 
+
+*BASIC STRUCTURAL NAME , HOSTS , BECOME , VARS , TASKS *
+
+    VARIABLES: playbook vars inventory vars command line -e facts
+    JINJA2 SYNTAX:{{variable_name}} FOR USE VARIABALES

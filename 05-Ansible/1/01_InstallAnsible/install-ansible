@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+sudo apt update
+
+sudo apt install pipx -y
+pipx ensurepath
+pipx install ansible
+
+sudo apt install ansible -y
+
+export PATH=$PATH:~/.local/bin
+ansible --version > ansible_version.txt
+ansible-doc -l | head -30 >> ansible_version.txt
+echo "Total modules: $(ansible-doc -l | wc -l)" >> ansible_version.txt
